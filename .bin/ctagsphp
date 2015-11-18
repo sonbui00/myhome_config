@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+# This script get from http://nikhgupta.com/code/using-vim-php-ide-exuberant-ctags-code-browsing/
+ctags --recurse --tag-relative \
+    --languages=-javascript,sql \
+    --exclude=.git \
+    --sort=yes --append \
+    --PHP-kinds=+cf \
+    --regex-PHP='/abstract class ([^ ]*)/\1/c/' \
+    --regex-PHP='/interface ([^ ]*)/\1/c/' \
+    --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/' \
+    .
