@@ -1,0 +1,4 @@
+# Use this file with below command
+# git config --global core.excludesfile '~/.gitignoreGlobal'
+/tags
+/.idea

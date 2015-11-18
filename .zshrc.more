@@ -1,0 +1,11 @@
+# Add this file to .zshrc with line
+# source ~/.zshrc.more
+
+# My editor
+export EDITOR='vim'
+
+# If you use opensource browser chromium
+# This line will support capybara
+export BROWSER=chromium
+
+export PATH=$PATH:/home/sonbv/.composer/vendor/bin:/home/sonbv/.bin
